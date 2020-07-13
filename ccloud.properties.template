@@ -1,0 +1,10 @@
+bootstrap.servers=pkc-41wq6.eu-west-2.aws.confluent.cloud:9092
+ssl.endpoint.identification.algorithm=https
+security.protocol=SASL_SSL
+sasl.mechanism=PLAIN
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username="{{ CLUSTER_API_KEY }}"   password="{{ CLUSTER_API_SECRET }}";
+
+# Confluent Cloud Schema Registry
+schema.registry.url=https://psrc-lo5k9.eu-central-1.aws.confluent.cloud
+basic.auth.credentials.source=USER_INFO
+schema.registry.basic.auth.user.info={{ SR_API_KEY }}:{{ SR_API_SECRET }}
