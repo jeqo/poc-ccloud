@@ -1,0 +1,15 @@
+{
+  "filter": {
+      "field": "metric.label.cluster_id",
+      "op": "EQ",
+      "value": "lkc-75dop"
+  },
+  "group_by": [
+      "metric.label.topic"
+  ],
+  "intervals": [
+      "2020-07-28T09:30:00+01:00/2020-07-28T10:30:00+01:00"
+  ],
+  "limit": 25,
+  "metric": "io.confluent.kafka.server/sent_bytes/delta"
+}

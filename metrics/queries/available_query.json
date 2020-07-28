@@ -1,0 +1,7 @@
+{
+  "filter": {
+    "field": "metric.label.cluster_id",
+    "op": "EQ",
+    "value": "lkc-75dop"
+  }
+}
