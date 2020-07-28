@@ -2,7 +2,7 @@
   "aggregations": [
       {
           "agg": "SUM",
-          "metric": "io.confluent.kafka.server/received_bytes"
+          "metric": "io.confluent.kafka.server/received_records"
       }
   ],
   "filter": {
@@ -17,8 +17,7 @@
   },
   "granularity": "PT1M",
   "group_by": [
-      "metric.label.topic",
-      "metric.label.partition"
+      "metric.label.topic"
   ],
   "intervals": [
       "2020-07-28T09:30:00+01:00/2020-07-28T10:30:00+01:00"
